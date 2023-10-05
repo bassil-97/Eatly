@@ -25,11 +25,11 @@
     <div class="container-fluid">
         <section class="page-section home-hero__section">
             <div class="container">
-                <nav class="navbar">
+                <nav class="navbar" id="myNavbar">
                     <div class="logo">
                         <a href="#">Eatly</a>
                     </div>
-                    <div class="nav-links">
+                    <div class="nav-links" id="myNavbar-links">
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
@@ -37,9 +37,14 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
-                    <button class="cta">
-                        Let’s Talk
-                    </button>
+                    <div class="d-flex align-items-center justify-content-center gap-2">
+                        <button class="cta">
+                            Let’s Talk
+                        </button>
+                        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                            <i class="fa fa-bars text-white"></i>
+                        </a>
+                    </div>
                 </nav>
                 <div class="row">
                     <div class="col">
@@ -386,6 +391,15 @@
                 ]
             });
         });
+
+        function toggleNavbar() {
+            var navbar = document.getElementById("myNavbar");
+            if (navbar.className === "navbar") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "navbar";
+            }
+        }
     </script>
 </body>
 
