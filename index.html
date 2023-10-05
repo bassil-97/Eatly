@@ -108,6 +108,20 @@
                                 <h6 class="d-flex justify-content-center align-items-center">Learn More <i
                                         class="fa-solid fa-play"></i></h6>
                             </div>
+                            <div class="slide">
+                                <i class="fa-solid fa-shield mb-2"></i>
+                                <h4 class="fw-bold mb-2">Healthy Lifes</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <h6 class="d-flex justify-content-center align-items-center">Learn More <i
+                                        class="fa-solid fa-play"></i></h6>
+                            </div>
+                            <div class="slide">
+                                <i class="fa-solid fa-shield mb-2"></i>
+                                <h4 class="fw-bold mb-2">Healthy Lifes</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <h6 class="d-flex justify-content-center align-items-center">Learn More <i
+                                        class="fa-solid fa-play"></i></h6>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -372,6 +386,39 @@
                             slidesToScroll: 1,
                             infinite: true,
                             dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            $('.slider').slick({
+                autoplay: true,
+                arrows: true,
+                dots: false,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            infinite: true,
+                            dots: false
                         }
                     },
                     {
